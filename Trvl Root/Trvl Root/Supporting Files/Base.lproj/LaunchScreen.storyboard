@@ -14,24 +14,17 @@
         <scene sceneID="EHf-IW-A2E">
             <objects>
                 <viewController id="01J-lp-oVM" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleAspectFit" id="Ze5-6b-2t3">
+                    <view key="view" contentMode="scaleToFill" id="Ze5-6b-2t3">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="launchScreenIcon" translatesAutoresizingMaskIntoConstraints="NO" id="GCj-ZW-2sR">
-                                <rect key="frame" x="147" y="293" width="80" height="80"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="80" id="ZDe-0M-xfD"/>
-                                    <constraint firstAttribute="height" constant="80" id="pyj-1v-imU"/>
-                                </constraints>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="launchScreenIcon" translatesAutoresizingMaskIntoConstraints="NO" id="GCj-ZW-2sR">
+                                <rect key="frame" x="137" y="293" width="100" height="80"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="tintColor" red="0.18039215689999999" green="0.76862745099999996" blue="0.71372549019999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        <constraints>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="GCj-ZW-2sR" secondAttribute="trailing" constant="148" id="2lL-bt-d8v"/>
-                            <constraint firstItem="GCj-ZW-2sR" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="Hz1-Hr-gpo"/>
-                            <constraint firstItem="GCj-ZW-2sR" firstAttribute="centerY" secondItem="Ze5-6b-2t3" secondAttribute="centerY" id="mZX-x4-dsa"/>
-                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                 </viewController>
@@ -41,6 +34,6 @@
         </scene>
     </scenes>
     <resources>
-        <image name="launchScreenIcon" width="64" height="32"/>
+        <image name="launchScreenIcon" width="64" height="64"/>
     </resources>
 </document>

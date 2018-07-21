@@ -1,0 +1,6 @@
+framework module Pods_Trvl_Root {
+  umbrella header "Pods-Trvl Root-umbrella.h"
+
+  export *
+  module * { export * }
+}
