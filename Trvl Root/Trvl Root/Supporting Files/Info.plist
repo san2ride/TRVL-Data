@@ -41,5 +41,9 @@
 		<string>UIInterfaceOrientationLandscapeLeft</string>
 		<string>UIInterfaceOrientationLandscapeRight</string>
 	</array>
+	<key>NSLocationAlwaysAndWhenInUseUsageDescription</key>
+	<string>TRVL request&apos;s your location...</string>
+	<key>NSLocationWhenInUseUsageDescription</key>
+	<string>TRVL request&apos;s your location...</string>
 </dict>
 </plist>
