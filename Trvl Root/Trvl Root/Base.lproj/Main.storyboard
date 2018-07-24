@@ -36,42 +36,104 @@
                                     <segue destination="xhb-TY-RdK" kind="show" id="mwA-6t-P5o"/>
                                 </connections>
                             </button>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="PRU-Bl-Mxd">
+                                <rect key="frame" x="16" y="116" width="343" height="80"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalSpacing" spacing="2" translatesAutoresizingMaskIntoConstraints="NO" id="YDg-aT-nTA">
+                                        <rect key="frame" x="16" y="8" width="310" height="70"/>
+                                        <subviews>
+                                            <stackView opaque="NO" contentMode="scaleToFill" alignment="center" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="nuf-04-3Pr">
+                                                <rect key="frame" x="0.0" y="0.0" width="310" height="33"/>
+                                                <subviews>
+                                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="My Location" textAlignment="center" clearsOnBeginEditing="YES" minimumFontSize="17" clearButtonMode="always" translatesAutoresizingMaskIntoConstraints="NO" id="fIn-fD-1jF" customClass="RoundedCornerTextField" customModule="Trvl_Root" customModuleProvider="target">
+                                                        <rect key="frame" x="0.0" y="0.5" width="310" height="32"/>
+                                                        <color key="backgroundColor" red="0.2114041109" green="0.66236354990000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="32" id="d08-Wa-m5P"/>
+                                                        </constraints>
+                                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="17"/>
+                                                        <textInputTraits key="textInputTraits" autocapitalizationType="allCharacters" autocorrectionType="no" spellCheckingType="no" keyboardAppearance="alert" returnKeyType="search" enablesReturnKeyAutomatically="YES" textContentType="location"/>
+                                                        <connections>
+                                                            <outlet property="delegate" destination="BYZ-38-t0r" id="6eq-bV-q7m"/>
+                                                        </connections>
+                                                    </textField>
+                                                </subviews>
+                                            </stackView>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="3r8-0c-i0R">
+                                                <rect key="frame" x="0.0" y="35" width="310" height="1"/>
+                                                <color key="backgroundColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="1" id="FUI-9c-QqL"/>
+                                                </constraints>
+                                            </view>
+                                            <stackView opaque="NO" contentMode="scaleToFill" alignment="center" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="K2s-oQ-Zie">
+                                                <rect key="frame" x="0.0" y="38" width="310" height="32"/>
+                                                <subviews>
+                                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="enter airport code" textAlignment="center" clearsOnBeginEditing="YES" minimumFontSize="17" clearButtonMode="always" translatesAutoresizingMaskIntoConstraints="NO" id="R6E-4K-Qfi" customClass="RoundedCornerTextField" customModule="Trvl_Root" customModuleProvider="target">
+                                                        <rect key="frame" x="0.0" y="0.0" width="310" height="32"/>
+                                                        <color key="backgroundColor" red="0.2114041109" green="0.66236354990000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="32" id="Kg7-ZL-cjh"/>
+                                                        </constraints>
+                                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="17"/>
+                                                        <textInputTraits key="textInputTraits" autocapitalizationType="allCharacters" autocorrectionType="no" spellCheckingType="no" keyboardAppearance="alert" returnKeyType="search" enablesReturnKeyAutomatically="YES" textContentType="location"/>
+                                                        <connections>
+                                                            <outlet property="delegate" destination="BYZ-38-t0r" id="1Qa-uy-nQ6"/>
+                                                        </connections>
+                                                    </textField>
+                                                </subviews>
+                                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="310" id="2nE-Vw-jdV"/>
+                                                    <constraint firstAttribute="height" constant="32" id="7HI-eD-bqG"/>
+                                                </constraints>
+                                            </stackView>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstItem="3r8-0c-i0R" firstAttribute="top" secondItem="nuf-04-3Pr" secondAttribute="bottom" constant="2" id="brM-JZ-Bzt"/>
+                                            <constraint firstAttribute="height" constant="70" id="rFu-05-Ant"/>
+                                        </constraints>
+                                    </stackView>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="tintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstItem="YDg-aT-nTA" firstAttribute="top" secondItem="PRU-Bl-Mxd" secondAttribute="topMargin" id="QQu-1d-JD6"/>
+                                    <constraint firstItem="YDg-aT-nTA" firstAttribute="centerX" secondItem="PRU-Bl-Mxd" secondAttribute="centerX" id="mde-Pd-wtO"/>
+                                </constraints>
+                            </view>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="O7q-ko-Yda">
-                                <rect key="frame" x="297" y="503" width="62" height="62"/>
+                                <rect key="frame" x="297" y="512" width="62" height="62"/>
                                 <state key="normal" image="centerMapBtn"/>
                                 <connections>
                                     <action selector="centerMapPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="BhR-0D-37u"/>
                                 </connections>
                             </button>
-                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="enter airport code" textAlignment="center" clearsOnBeginEditing="YES" minimumFontSize="17" clearButtonMode="always" translatesAutoresizingMaskIntoConstraints="NO" id="R6E-4K-Qfi" customClass="RoundedCornerTextField" customModule="Trvl_Root" customModuleProvider="target">
-                                <rect key="frame" x="16" y="132" width="343" height="32"/>
-                                <color key="backgroundColor" red="0.2114041109" green="0.66236354990000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="23"/>
-                                <textInputTraits key="textInputTraits" autocapitalizationType="allCharacters" autocorrectionType="no" spellCheckingType="no" keyboardAppearance="alert" returnKeyType="search" enablesReturnKeyAutomatically="YES" textContentType="location"/>
-                                <connections>
-                                    <outlet property="delegate" destination="BYZ-38-t0r" id="1Qa-uy-nQ6"/>
-                                </connections>
-                            </textField>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <gestureRecognizers/>
                         <constraints>
-                            <constraint firstItem="O7q-ko-Yda" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="297" id="1xn-1Q-Gbu"/>
                             <constraint firstItem="WWn-O8-Yhi" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="DLo-4w-gYm"/>
-                            <constraint firstItem="O7q-ko-Yda" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="387" id="Kqy-hz-shY"/>
+                            <constraint firstItem="PRU-Bl-Mxd" firstAttribute="leading" secondItem="brD-hY-NJv" secondAttribute="leading" id="FYC-UT-oLp"/>
+                            <constraint firstAttribute="bottom" secondItem="PRU-Bl-Mxd" secondAttribute="bottom" constant="471" id="HF5-MU-iLW"/>
                             <constraint firstItem="WWn-O8-Yhi" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="Lf1-KT-OlZ"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="brD-hY-NJv" secondAttribute="trailing" constant="16" id="Lhq-Lv-wCp"/>
                             <constraint firstItem="WWn-O8-Yhi" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="OGg-sa-TsU"/>
-                            <constraint firstItem="R6E-4K-Qfi" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="16" id="T1r-kh-OaZ"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="R6E-4K-Qfi" secondAttribute="trailing" constant="16" id="VUB-NW-Vvz"/>
-                            <constraint firstItem="brD-hY-NJv" firstAttribute="top" secondItem="O7q-ko-Yda" secondAttribute="bottom" constant="26" id="Ylm-Gu-QLa"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="brD-hY-NJv" secondAttribute="bottom" constant="16" id="aU1-Uq-yiQ"/>
-                            <constraint firstItem="R6E-4K-Qfi" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="duD-SC-zwV"/>
-                            <constraint firstItem="O7q-ko-Yda" firstAttribute="trailing" secondItem="brD-hY-NJv" secondAttribute="trailing" id="fxf-VZ-zNV"/>
+                            <constraint firstItem="PRU-Bl-Mxd" firstAttribute="trailing" secondItem="O7q-ko-Yda" secondAttribute="trailing" id="eTo-0M-zmI"/>
+                            <constraint firstItem="PRU-Bl-Mxd" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="fmU-Ej-y9H"/>
+                            <constraint firstItem="brD-hY-NJv" firstAttribute="top" secondItem="O7q-ko-Yda" secondAttribute="bottom" constant="17" id="hsi-Jj-QyH"/>
+                            <constraint firstItem="O7q-ko-Yda" firstAttribute="leading" secondItem="WWn-O8-Yhi" secondAttribute="trailing" constant="-78" id="mxw-EI-C5y"/>
+                            <constraint firstItem="WWn-O8-Yhi" firstAttribute="top" secondItem="PRU-Bl-Mxd" secondAttribute="bottom" constant="-196" id="o9F-N5-bqP"/>
+                            <constraint firstItem="PRU-Bl-Mxd" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="t0i-3M-wZw"/>
                             <constraint firstItem="WWn-O8-Yhi" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="v8N-05-XrS"/>
                             <constraint firstItem="brD-hY-NJv" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="vmF-Fo-Ogw"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="PRU-Bl-Mxd" secondAttribute="trailing" constant="16" id="wLv-p4-7bp"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <connections>
