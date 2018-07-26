@@ -8,6 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		64C87207CD8D664D6D24E66C /* Pods_Trvl_Root.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 424C81CE27B6A71C6EE2AE1D /* Pods_Trvl_Root.framework */; };
+		AD5F0BE32109A010003F13A4 /* UpdateService.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD5F0BE22109A010003F13A4 /* UpdateService.swift */; };
+		AD5F0BE52109A28D003F13A4 /* DataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD5F0BE42109A28D003F13A4 /* DataService.swift */; };
+		AD5F0BE72109A355003F13A4 /* UIView.Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD5F0BE62109A355003F13A4 /* UIView.Ext.swift */; };
 		AD612F512103CBB600A13509 /* AirportsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD612F502103CBB600A13509 /* AirportsController.swift */; };
 		AD612F532103E05200A13509 /* RoundImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD612F522103E05200A13509 /* RoundImageView.swift */; };
 		AD612F552103E13F00A13509 /* RoundedShadowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD612F542103E13F00A13509 /* RoundedShadowView.swift */; };
@@ -29,6 +32,9 @@
 		424C81CE27B6A71C6EE2AE1D /* Pods_Trvl_Root.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Trvl_Root.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		820BB3C378BB0C6521346E2C /* Pods-Trvl Root.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Trvl Root.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Trvl Root/Pods-Trvl Root.debug.xcconfig"; sourceTree = "<group>"; };
 		AB873198A520DD730BE005A1 /* Pods-Trvl Root.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Trvl Root.release.xcconfig"; path = "Pods/Target Support Files/Pods-Trvl Root/Pods-Trvl Root.release.xcconfig"; sourceTree = "<group>"; };
+		AD5F0BE22109A010003F13A4 /* UpdateService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UpdateService.swift; sourceTree = "<group>"; };
+		AD5F0BE42109A28D003F13A4 /* DataService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataService.swift; sourceTree = "<group>"; };
+		AD5F0BE62109A355003F13A4 /* UIView.Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIView.Ext.swift; sourceTree = "<group>"; };
 		AD612F502103CBB600A13509 /* AirportsController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AirportsController.swift; sourceTree = "<group>"; };
 		AD612F522103E05200A13509 /* RoundImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundImageView.swift; sourceTree = "<group>"; };
 		AD612F542103E13F00A13509 /* RoundedShadowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundedShadowView.swift; sourceTree = "<group>"; };
@@ -157,6 +163,8 @@
 		AD6213E02102EC80001F67E2 /* services */ = {
 			isa = PBXGroup;
 			children = (
+				AD5F0BE22109A010003F13A4 /* UpdateService.swift */,
+				AD5F0BE42109A28D003F13A4 /* DataService.swift */,
 			);
 			path = services;
 			sourceTree = "<group>";
@@ -171,6 +179,7 @@
 		AD6213E22102EC99001F67E2 /* extensions */ = {
 			isa = PBXGroup;
 			children = (
+				AD5F0BE62109A355003F13A4 /* UIView.Ext.swift */,
 			);
 			path = extensions;
 			sourceTree = "<group>";
@@ -303,6 +312,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				AD6213CB2102EC19001F67E2 /* AppDelegate.swift in Sources */,
+				AD5F0BE72109A355003F13A4 /* UIView.Ext.swift in Sources */,
+				AD5F0BE52109A28D003F13A4 /* DataService.swift in Sources */,
 				AD6213F62102FB39001F67E2 /* DataStore.swift in Sources */,
 				AD612F592103E47600A13509 /* RoundedCornerTextField.swift in Sources */,
 				AD612F552103E13F00A13509 /* RoundedShadowView.swift in Sources */,
@@ -311,6 +322,7 @@
 				AD6213ED2102F1BA001F67E2 /* AirportsCell.swift in Sources */,
 				AD612F572103E26600A13509 /* CircleView.swift in Sources */,
 				AD6213F22102F33C001F67E2 /* Airport.swift in Sources */,
+				AD5F0BE32109A010003F13A4 /* UpdateService.swift in Sources */,
 				AD6213F02102F27B001F67E2 /* AirportAPI.swift in Sources */,
 				AD6213EB2102F114001F67E2 /* AirportDataController.swift in Sources */,
 				AD612F532103E05200A13509 /* RoundImageView.swift in Sources */,

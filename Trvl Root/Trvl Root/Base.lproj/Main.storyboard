@@ -106,7 +106,7 @@
                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                                 <connections>
-                                    <action selector="searchAirportPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="uU1-5m-wpK"/>
+                                    <action selector="searchAirportPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="AdI-xx-0Ld"/>
                                     <segue destination="xhb-TY-RdK" kind="show" id="mwA-6t-P5o"/>
                                 </connections>
                             </button>
